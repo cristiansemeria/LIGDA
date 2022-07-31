@@ -115,8 +115,8 @@ header{
 }
 .container_2{
     display: flex;
-    justify-content: space-around;
-    width: -webkit-fill-available;
+    justify-content: flex-start;
+    width: -webkit-fill-available !important;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -134,12 +134,13 @@ section.content{
 .box-x{
     border: 1px solid #000;
     margin-right: 15px;
-    height: 160px;
+    height: 160px !important;
     padding: 15px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 .box-x i{
     font-size: 25pt;
@@ -148,6 +149,7 @@ section.content{
 }
 .box-x h2{
     padding-bottom: 7px;
+    font-size: 15pt;
 }
 footer{
     height: 100px;
@@ -160,4 +162,12 @@ footer{
 .footer{
     display: flex;
     justify-content: center;
+}
+
+/* SWAPPER */
+.swiper{
+    width: 100%;
+}
+.swiper-slide{
+    flex-shrink: 1 !important;
 }
